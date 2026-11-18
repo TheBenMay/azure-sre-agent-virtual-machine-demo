@@ -1,0 +1,20 @@
+{
+  "name": "sre-demo-app",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Ben May",
+  "description": "SRE Agent demo console: React/Vite frontend + Express/TypeScript backend, served as one process on one port.",
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=web && npm run build --workspace=api",
+    "start": "npm run start --workspace=api",
+    "dev:web": "npm run dev --workspace=web",
+    "dev:api": "npm run dev --workspace=api"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

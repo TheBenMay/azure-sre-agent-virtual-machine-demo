@@ -1,0 +1,3 @@
+# Per-deployment generated artifact (produced by scripts/New-AgentInstructions.ps1) —
+# contains one deployment's actual subscription/resource IDs, so it should not be committed.
+docs/vm-alert-responder-instructions.generated.md
